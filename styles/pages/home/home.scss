@@ -80,6 +80,10 @@
   pointer-events: none;
   position: relative;
 
+  .home__item--micheal-moon & {
+    transform: translateX(0.6rem);
+  }
+
   .home__item--vanitee & {
     transform: translateX(-1.9rem);
   }
