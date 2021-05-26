@@ -80,6 +80,10 @@
   pointer-events: none;
   position: relative;
 
+  .home__item--diners-club & {
+    transform: translateX(13.2rem);
+  }
+
   .home__item--micheal-moon & {
     transform: translateX(0.6rem);
   }
