@@ -80,6 +80,10 @@
   pointer-events: none;
   position: relative;
 
+  .home__item--caasocio & {
+    transform: translateX(-24.4rem);
+  }
+
   .home__item--diners-club & {
     transform: translateX(13.2rem);
   }
