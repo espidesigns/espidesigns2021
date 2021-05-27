@@ -1,10 +1,10 @@
-# espidesigns2021 // from BIZAR.RO
+# espidesigns//2021 from BIZAR.RO
 
 [![JS Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
 
-[![Screenshot of Website](bizarro.jpg)](https://bizar.ro/)
+[![Screenshot of Website](espidesigns2021.jpg)](https://www.espidesigns.com/)
 
-This is the repository of [Bizarro](http://bizar.ro/) portfolio. The website was submitted to [Awwwards](https://www.awwwards.com/) in [December 14, 2020](https://www.awwwards.com/sites/bizarro) but unfortunately didn't made to score a Site of The Day.
+This is the repository of [espidesigns//2021](https://www.espidesigns.com/) forked from [Bizarro](http://bizar.ro/) portfolio. 
 
 # Overview
 
