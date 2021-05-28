@@ -23,4 +23,22 @@ npm install
 
 # Configure .env variables and run the website.
 npm start
+
+# "npm run deploy" did not work for me (because local and remote gh-pages pages must not exist first)
+
+# below worked to deploy build site to github pages
+1. npm run build
+
+## you can avoid this line if you are in master...
+2. git checkout master 
+
+## create a local gh-pages branch containing the splitted output folder
+3. git subtree split --prefix public -b gh-pages 
+
+## force the push of the gh-pages branch to the remote gh-pages branch at origin
+4. git push -f origin gh-pages:gh-pages 
+
+## delete the local gh-pages because you will need it: ref
+5. git branch -D gh-pages 
+
 ```
