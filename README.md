@@ -29,8 +29,8 @@ npm start
 # below worked to deploy build site to github pages
 1. npm run build
 
-## you can avoid this line if you are in master...
-2. git checkout master 
+## you can avoid this line if you are in main...
+2. git checkout main 
 
 ## create a local gh-pages branch containing the splitted output folder
 3. git subtree split --prefix public -b gh-pages 
@@ -42,3 +42,13 @@ npm start
 5. git branch -D gh-pages 
 
 ```
+
+
+when npm start doesn't work:
+Delete node_modules
+Remove node-sass from package.json
+npm install
+npm uninstall node-sass
+npm install sass
+npm audit fix
+npm start
