@@ -104,97 +104,105 @@
     transform: translateX(-19rem);
   }
 
-  .home__item--adventure-time & {
-    transform: translateX(7.5rem);
+  .home__item--access-travel & {
+    transform: translateX(-13.2rem);
   }
 
-  .home__item--studio-maertens & {
-    transform: translateX(24.5rem);
+  .home__item--explora-ahora & {
+    transform: translateX(11.6rem);
   }
 
-  .home__item--inbound & {
-    transform: translateX(28.6rem);
+  .home__item--collabfive & {
+    transform: translateX(15rem);
   }
 
-  .home__item--redis & {
-    transform: translateX(-9rem);
-  }
-
-  .home__item--kaleidoz & {
-    transform: translateX(-4.7rem);
-  }
-
-  .home__item--erika-moreira & {
-    transform: translateX(-32.5rem);
-  }
-
-  .home__item--bruno-arizio & {
-    transform: translateX(37.4rem);
-  }
-
-  .home__item--dominic-berzins & {
-    transform: translateX(12.8rem);
-  }
-
-  .home__item--pagethink & {
-    transform: translateX(-1.8rem);
-  }
-
-  .home__item--cult & {
-    transform: translateX(-13.5rem);
-  }
-
-  .home__item--movida & {
-    transform: translateX(-7.6rem);
-  }
-
-  .home__item--lufthansa-2 & {
+  .home__item--retrato & {
     transform: translateX(9.8rem);
   }
 
-  .home__item--tiaa & {
-    transform: translateX(5.9rem);
+  .home__item--venatus & {
+    transform: translateX(18.8rem);
   }
 
-  .home__item--lufthansa-1 & {
-    transform: translateX(40rem);
+  .home__item--adinplay & {
+    transform: translateX(1.4rem);
   }
 
-  .home__item--shell & {
-    transform: translateX(-14.3rem);
-  }
+  // .home__item--kaleidoz & {
+  //   transform: translateX(-4.7rem);
+  // }
 
-  .home__item--corvette & {
-    transform: translateX(-24.5rem);
-  }
+  // .home__item--erika-moreira & {
+  //   transform: translateX(-32.5rem);
+  // }
 
-  .home__item--nike & {
-    transform: translateX(3.7rem);
-  }
+  // .home__item--bruno-arizio & {
+  //   transform: translateX(37.4rem);
+  // }
 
-  .home__item--airbnb & {
-    transform: translateX(-18rem);
-  }
+  // .home__item--dominic-berzins & {
+  //   transform: translateX(12.8rem);
+  // }
 
-  .home__item--discovery-kids & {
-    transform: translateX(-36.8rem);
-  }
+  // .home__item--pagethink & {
+  //   transform: translateX(-1.8rem);
+  // }
 
-  .home__item--rock-in-rio & {
-    transform: translateX(-3.1rem);
-  }
+  // .home__item--cult & {
+  //   transform: translateX(-13.5rem);
+  // }
 
-  .home__item--neoway & {
-    transform: translateX(18.4rem);
-  }
+  // .home__item--movida & {
+  //   transform: translateX(-7.6rem);
+  // }
 
-  .home__item--one-plus & {
-    transform: translateX(12.2rem);
-  }
+  // .home__item--lufthansa-2 & {
+  //   transform: translateX(9.8rem);
+  // }
 
-  .home__item--samsung & {
-    transform: translateX(4.9rem);
-  }
+  // .home__item--tiaa & {
+  //   transform: translateX(5.9rem);
+  // }
+
+  // .home__item--lufthansa-1 & {
+  //   transform: translateX(40rem);
+  // }
+
+  // .home__item--shell & {
+  //   transform: translateX(-14.3rem);
+  // }
+
+  // .home__item--corvette & {
+  //   transform: translateX(-24.5rem);
+  // }
+
+  // .home__item--nike & {
+  //   transform: translateX(3.7rem);
+  // }
+
+  // .home__item--airbnb & {
+  //   transform: translateX(-18rem);
+  // }
+
+  // .home__item--discovery-kids & {
+  //   transform: translateX(-36.8rem);
+  // }
+
+  // .home__item--rock-in-rio & {
+  //   transform: translateX(-3.1rem);
+  // }
+
+  // .home__item--neoway & {
+  //   transform: translateX(18.4rem);
+  // }
+
+  // .home__item--one-plus & {
+  //   transform: translateX(12.2rem);
+  // }
+
+  // .home__item--samsung & {
+  //   transform: translateX(4.9rem);
+  // }
 
   @include media('<=phone') {
     transform: none !important;
