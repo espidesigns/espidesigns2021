@@ -3,19 +3,24 @@ script(async src="https://www.googletagmanager.com/gtag/js?id=UA-59964148-8")
 script
   include analytics.js
 
-chat-widget(
-  location-id="BhMyXQBXrbOKl3HcpQrO"
-  prompt-msg="Hi there, have a question? Chat us here." 
-  use-email-field="true" 
-  prompt-avatar="https://images.leadconnectorhq.com/image/f_webp/q_100/r_45/u_https://cdn.filesafe.space/locationPhotos%2FBhMyXQBXrbOKl3HcpQrO%2Fchat-widget-person?alt=media&token=4c69b0a8-fd9c-4ae9-b97a-4c7dab8b0ec6" 
-  agency-name="espidesigns Systems" 
-  agency-website="www.espidesigns.com" 
-  chat-type="liveChat" 
-  live-chat-feedback-note="Thank you, for taking your time." 
-  show-consent-checkbox="true"
-)
 
-script(
-  src="https://widgets.leadconnectorhq.com/loader.js" 
-  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-)
+
+
+//  Google Tag Manager 
+script.
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W8M4CPGQ');
+//  End Google Tag Manager 
+
+//  Google Tag Manager (noscript) 
+noscript <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8M4CPGQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+//  End Google Tag Manager (noscript) 
+
+
+
+chat-widget(location-id="BhMyXQBXrbOKl3HcpQrO", prompt-msg="Hi there, have a question? Chat us here.", use-email-field="true", prompt-avatar="https://images.leadconnectorhq.com/image/f_webp/q_100/r_45/u_https://cdn.filesafe.space/locationPhotos%2FBhMyXQBXrbOKl3HcpQrO%2Fchat-widget-person?alt=media&token=4c69b0a8-fd9c-4ae9-b97a-4c7dab8b0ec6", agency-name="Hexona Systems", agency-website="www.hexonasystems.com", chat-type="liveChat", live-chat-feedback-note="Thank you, for taking your time.", show-consent-checkbox="true").
+
+script(src="https://widgets.leadconnectorhq.com/loader.js", data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js").

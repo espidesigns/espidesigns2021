@@ -83,7 +83,7 @@ module.exports = {
     ...mapFolders,
 
     new CnameWebpackPlugin({
-      domain: 'www.espidesigns.com'
+      domain: 'espi.design'
     }),
 
     new CopyWebpackPlugin([
