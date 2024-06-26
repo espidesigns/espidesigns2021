@@ -2,9 +2,9 @@
 
 [![JS Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
 
-[![Screenshot of Website](espidesigns2021.jpg)](https://www.espidesigns.com/)
+[![Screenshot of Website](espidesigns2021.jpg)](https://espi.design/)
 
-This is the repository of [espidesigns//2021](https://www.espidesigns.com/) forked from [Bizarro](http://bizar.ro/) portfolio. 
+This is the repository of [espidesigns//2021](https://espi.design/) forked from [Bizarro](http://bizar.ro/) portfolio. 
 
 # Overview
 
