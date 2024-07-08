@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const CnameWebpackPlugin = require('cname-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HTMLInlineCSSWebpackPlugin = require('html-inline-css-webpack-plugin').default
-const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
+const ImageminWebpWebpackPlugin= require('imagemin-webp-webpack-plugin');
 
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
 
@@ -60,7 +60,9 @@ module.exports = {
   ],
 
   output: {
-    filename: '[name].[contenthash].js'
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'public'),
+    publicPath: '/'
   },
 
   resolve: {
@@ -69,6 +71,11 @@ module.exports = {
       dirAssets,
       dirNode
     ]
+  },
+
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    historyApiFallback: true,
   },
 
   plugins: [
