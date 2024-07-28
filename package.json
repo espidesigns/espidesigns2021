@@ -6,7 +6,7 @@
     "build": "npx webpack -p --progress --config webpack.config.build.js",
     "development": "npx cross-env NODE_ENV=dev webpack-dev-server --progress --config webpack.config.development.js",
     "lint": "eslint *.js",
-    "deploy": "npm run build && git checkout main && git subtree split --prefix public -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages"
+    "deploy": "npm run build && git subtree split --prefix public -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
