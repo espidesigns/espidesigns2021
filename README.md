@@ -15,6 +15,9 @@ The front end of the portfolio was made entirely with plain JavaScript code usin
 You need to have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed in your machine, these are our only dependencies to run the project locally.
 
 ```sh
+## switch to latest node
+$ nvm use 18
+
 # Clone the project.
 git clone https://github.com/lhbzr/bizar.ro.git
 
@@ -25,6 +28,9 @@ npm install
 npm start
 
 # "npm run deploy" did not work for me (because local and remote gh-pages pages must not exist first)
+
+## if build shows Error: error:0308010C:digital envelope routines::unsupported: 
+$ export NODE_OPTIONS=--openssl-legacy-provider
 
 # below worked to deploy build site to github pages
 1. npm run build
