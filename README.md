@@ -29,6 +29,10 @@ npm start
 
 # "npm run deploy" did not work for me (because local and remote gh-pages pages must not exist first)
 
+## if error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+## send-pack: unexpected disconnect while reading sideband packet
+$ git config --global http.postBuffer 157286400
+
 ## if build shows Error: error:0308010C:digital envelope routines::unsupported: 
 $ export NODE_OPTIONS=--openssl-legacy-provider
 
