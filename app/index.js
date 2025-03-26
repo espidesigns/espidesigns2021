@@ -124,7 +124,10 @@ class App {
         collabfive: 'COLLAB FIVE',
         retrato: 'RETRATO.PH',
         venatus: 'VENATUS',
-        adinplay: 'ADINPLAY'
+        adinplay: 'ADINPLAY',
+        'simmer-studios': 'SIMMER STUDIOS',
+        'gaslight-district': 'THE GASLIGHT DISTRICT',
+        'hip-developments': 'HIP DEVELOPMENTS'
       }
       const caseId = url.split('/case/')[1].replace('/', '')
       const caseTitle = caseTitles[caseId] || caseId.toUpperCase()

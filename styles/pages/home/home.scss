@@ -121,11 +121,23 @@
   }
 
   .home__item--venatus & {
-    transform: translateX(18.8rem);
+    transform: translateX(18.9rem);
   }
 
   .home__item--adinplay & {
     transform: translateX(1.4rem);
+  }
+
+  .home__item--simmer-studios & {
+    transform: translateX(12rem);
+  }
+
+  .home__item--gaslight-district & {
+    transform: translateX(-2.4rem);
+  }
+
+  .home__item--hip-developments & {
+    transform: translateX(6.6rem);
   }
 
   // .home__item--kaleidoz & {
