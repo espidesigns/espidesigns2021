@@ -3,7 +3,11 @@ meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
 base(href="/")
 
-title espidesigns // Branding + Web Developer + Automation Expert
+//- Add canonical URL based on the current page
+- var currentPath = htmlWebpackPlugin.options.filename;
+- var canonicalUrl = "https://espi.design" + (currentPath === "index.html" ? "/" : "/" + currentPath.replace("index.html", ""));
+link(rel="canonical" href=canonicalUrl)
+
 
 meta(name="description" content="I help tech startups and tech agencies increase their monthly revenue through strategic branding and highly converting web designs and automation")
 
