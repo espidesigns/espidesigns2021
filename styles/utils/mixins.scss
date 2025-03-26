@@ -1,3 +1,5 @@
+@use "sass:math";
+
 %cover {
   height: 100%;
   left: 0;
@@ -23,7 +25,7 @@
   &:after {
     content: '';
     display: inline-block;
-    padding-top: $width / $height * 100%;
+    padding-top: math.div($width, $height) * 100%;
     width: 100%;
   }
 }

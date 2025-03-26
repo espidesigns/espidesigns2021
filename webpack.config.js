@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const CnameWebpackPlugin = require('cname-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HTMLInlineCSSWebpackPlugin = require('html-inline-css-webpack-plugin').default
-const ImageminWebpWebpackPlugin= require('imagemin-webp-webpack-plugin');
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin')
 
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
 
@@ -121,7 +121,18 @@ module.exports = {
 
     new HTMLInlineCSSWebpackPlugin(),
 
-    new ImageminWebpWebpackPlugin()
+    new ImageminWebpWebpackPlugin({
+      config: [{
+        test: /\.(jpe?g|png)/,
+        options: {
+          quality: 75
+        }
+      }],
+      overrideExtension: true,
+      detailedLogs: false,
+      silent: false,
+      strict: true
+    })
   ],
 
   module: {
@@ -165,12 +176,40 @@ module.exports = {
 
       {
         test: /\.(jpe?g|png|gif|svg|fnt|webp)$/,
-        loader: 'file-loader',
-        options: {
-          name (file) {
-            return '[hash].[ext]'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              context: path.resolve(__dirname, 'assets'),
+              outputPath: '/',
+              publicPath: '/',
+              useRelativePaths: true
+            }
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              optipng: {
+                enabled: true
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false
+              },
+              webp: {
+                quality: 75
+              }
+            }
           }
-        }
+        ]
       },
 
       {

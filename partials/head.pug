@@ -8,6 +8,29 @@ base(href="/")
 - var canonicalUrl = "https://espi.design" + (currentPath === "index.html" ? "/" : "/" + currentPath.replace("index.html", ""));
 link(rel="canonical" href=canonicalUrl)
 
+//- Generate page title
+- var baseTitle = "espidesigns // Branding + Web Developer + Automation Expert"
+- var pageName = ""
+- if (currentPath === "index.html") {
+-   pageName = ""
+- } else if (currentPath === "about/index.html") {
+-   pageName = "About"
+- } else if (currentPath.startsWith("case/")) {
+-   var caseTitles = {
+-     'micheal-moon': 'MICHEAL MOON',
+-     'caasocio': 'CAASOCIO',
+-     'angely-dub': 'ANGELY DUB',
+-     'access-travel': 'ACCESS TRAVEL',
+-     'explora-ahora': 'EXPLORA AHORA',
+-     'collabfive': 'COLLAB FIVE',
+-     'retrato': 'RETRATO.PH',
+-     'venatus': 'VENATUS',
+-     'adinplay': 'ADINPLAY'
+-   }
+-   var caseId = currentPath.split("/")[1]
+-   pageName = caseTitles[caseId] || caseId.toUpperCase()
+- }
+title #{pageName ? pageName + " // " : ""}#{baseTitle}
 
 meta(name="description" content="I help tech startups and tech agencies increase their monthly revenue through strategic branding and highly converting web designs and automation")
 
