@@ -1,7 +1,0 @@
-/*
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-inline' 'sha256-YXlcEI0b+mO5OphfLC9LyFoCBTkluZRaNE7woa8HL9c=' 'sha256-Bwhj19oKKhjvlFXC8BVQKpUHIGAIdf8Z75Y23z75c6c=' data: https://www.googletagmanager.com https://www.google-analytics.com https://widgets.leadconnectorhq.com https://tagmanager.google.com https://*.googletagmanager.com; script-src-elem 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://widgets.leadconnectorhq.com https://tagmanager.google.com https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self' data: https:; connect-src 'self' data: https: wss: ws: https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.leadconnectorhq.com https://widgets.leadconnectorhq.com; frame-src 'self' https://www.googletagmanager.com https://*.doubleclick.net;
-  X-Frame-Options: SAMEORIGIN
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=() 
