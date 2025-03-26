@@ -95,24 +95,48 @@ class App {
   /**
    * Change.
    */
-  async onChange ({ push = !IS_DEVELOPMENT, url = null }) {
+  async onChange ({ push = true, url = null }) {
     url = url.replace(window.location.origin, '')
 
     if (this.isFetching || this.url === url) return
 
     this.isFetching = true
 
+    if (push) {
+      window.history.pushState({}, document.title, url)
+    }
+
     this.url = url
+
+    // Update page title based on URL
+    const baseTitle = 'espidesigns // Branding + Web Developer + Automation Expert'
+    let pageTitle = baseTitle
+
+    if (url === '/about') {
+      pageTitle = `About // ${baseTitle}`
+    } else if (url.startsWith('/case/')) {
+      const caseTitles = {
+        'micheal-moon': 'MICHEAL MOON',
+        caasocio: 'CAASOCIO',
+        'angely-dub': 'ANGELY DUB',
+        'access-travel': 'ACCESS TRAVEL',
+        'explora-ahora': 'EXPLORA AHORA',
+        collabfive: 'COLLAB FIVE',
+        retrato: 'RETRATO.PH',
+        venatus: 'VENATUS',
+        adinplay: 'ADINPLAY'
+      }
+      const caseId = url.split('/case/')[1].replace('/', '')
+      const caseTitle = caseTitles[caseId] || caseId.toUpperCase()
+      pageTitle = `${caseTitle} // ${baseTitle}`
+    }
+    document.title = pageTitle
 
     if (this.canvas) {
       this.canvas.onChange(this.url)
     }
 
     await this.page.hide()
-
-    if (push) {
-      window.history.pushState({}, document.title, url)
-    }
 
     this.navigation.onChange(this.url)
 
@@ -295,4 +319,8 @@ class App {
   }
 }
 
-new App()
+export default App
+
+// Create app instance
+// eslint-disable-next-line no-unused-vars
+const app = new App()
