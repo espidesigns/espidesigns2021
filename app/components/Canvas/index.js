@@ -66,9 +66,9 @@ export default class {
     this.pass = this.post.addPass({
       fragment,
       uniforms: {
-        uResolution: this.resolution,
-      },
-  });
+        uResolution: this.resolution
+      }
+    })
   }
 
   createList () {
@@ -81,7 +81,7 @@ export default class {
       const id = homeLink.href.replace(`${window.location.origin}/case/`, '')
       const caseMedia = document.querySelector(`#${id} .case__media`)
 
-      let media = new Media({
+      const media = new Media({
         caseMedia,
         geometry: this.planeGeometry,
         gl: this.gl,
@@ -102,7 +102,9 @@ export default class {
       const id = this.url.replace('/case/', '').replace('/', '')
       const media = this.medias.find(media => media.id === id)
 
-      media.onOpen()
+      if (media) {
+        media.onOpen()
+      }
     }
   }
 
