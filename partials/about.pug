@@ -47,7 +47,7 @@ section.about
             | #[span +]
             | #[span DEVELOPER]
 
-      .about__gallery(data-src="/about.jpg" data-src-webp="/about.webp")
+      .about__gallery(loading="lazy" data-src="/about.png" data-src-webp="/about.webp")
         each _, index in Array(24)
           .about__gallery__media(class=[1, 2, 8, 9, 11, 12, 13, 15, 16, 19, 21, 23].indexOf(index) > -1 ? "about__gallery__media--transparent" : "" data-index=index)
 
